@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color:teal;
+}
+
+.container {
+    max-width: 40%;
+    margin: auto;
+}
+
+.nav .nav-list {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+}
+
+.item {
+    border: 5px solid darkgrey;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 1000ms;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color:black;
+}
+
+.item:hover a {
+    text-decoration: underline;
+}
+
+.header {
+    width: 770px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    border: 15px solid darkslategray;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode a {
+    color: black;
+}
+
+body.dark-mode .container {
+    background-color: #444;
+
+}
+
+
+.main-img {
+    width: 100px;
+    height:80px;
+}
+
+.shortcuts {
+    display: flex;
+    padding: 1px 10px;
+}
+
+.shortcuts .shortcut-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:7px;
+    background-color: darkslategray;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.main-img img,
+.shortcut-icon img {
+    width: 90%;
+}
+
+.shortcut-icon:hover {
+    background-color: white;
+    transform: scale(1.6);
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 3px;
+    margin-left:  350px;
+    background-color: darkslategray;
+    padding: 1px 2px;
+    border-radius: 15px;
+    border-bottom-left-radius: 7px;
+}
+
+.input-group input {
+    padding: 17px 20px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: black;
+    width: 500px;
+    height: 70px;
+
+}
+
+.input-group img {
+    width: 30px;
+}
+
+.input-controls {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    width:600px;
+    height: 30px;
+}
+
+.search {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.links {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.link {
+    background-color:lightgoldenrodyellow;
+    width: 400px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 300ms;
+    margin: 5px 1px;
+    border-radius: 10px;
+    border: 5px solid black;
+    color: black;
+
+}
+
+.link:hover {
+    transform: scale(1.02);
+    background-color: black;
+    color: white;
+}
+
+.link img {
+    width: 30px;
+}
